@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang đăng ký thông tin thú cưng</title>
+</head>
+<body>
+    <h1>Pet Registration Form</h1>
+    <form   action="">
+        <fieldset>
+            <legend>General Infomation</legend>
+            Name: <input type="text" name="name"><br>
+            Species: 
+            <input type="radio" name="species" value="dog"> Dog
+            <input type="radio" name="species" value="cat"> Cat
+            <input type="radio" name="species" value="hamster"> Hamster
+            <input type="radio" name="species" value="other"> Other<br>
+            Gender"
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other<br>
+            Age: <input type="number" name="age" min="1" max="100"><br>
+            Birthday: <input type="date" name="birthday"><br>
+            Address:
+            <select name="city">
+                <option value="HCM">Sài Gòn</option>
+                <option value="HN">Hà Nội</option>
+                <option value="DN">Đà nẵng</option>
+                <option value="CT">Cần thơ</option>
+                <option value="other">Khác</option>
+            </select>
+            <select name="district">
+                <option value="district1">Quan 1</option>
+                <option value="district2">Quan 2</option>
+                <option value="district3">Quan 3</option>
+                <option value="district4">Quan 4</option>
+                <option value="district5">Quan 5</option>
+            </select>
+            <select name="ward">
+                <option value="ward1">Phuong 1</option>
+                <option value="ward2">Phuong 2</option>
+                <option value="ward3">Phuong 3</option>
+                <option value="ward4">Phuong 4</option>
+                <option value="ward5">Phuong 5</option>
+            </select> <br>
+            Skin color: 
+            <select name="skincolor">
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="orange">Orange</option>
+                <option value="brown">Brown</option>
+                <option value="other">other</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Pet photos</legend>
+            Upload the photo of your pet here.<br>
+            <input type="file" name="petPhoto">
+        </fieldset>
+        <fieldset>
+            <legend>Pet Hobbies</legend>
+            Pet love:
+        </fieldset>
+    </form>
+</body>
+</html>
