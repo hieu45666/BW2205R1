@@ -1,0 +1,51 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    color: white;
+}
+
+.container {
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    margin-top: 100px;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: nowrap;
+    /* flex-flow: column wrap; */
+}
+
+.Item1, .Item2, .Item3, .Item4 {
+    width: 15%;
+    height: 50%;
+}
+
+.Item1 {
+    background-color: coral;
+    flex-shrink: 2;
+    flex-grow: 2;
+}
+
+.Item2 {
+    background-color: lightblue;
+    flex-grow: 5;
+    order: 3;
+}
+
+.Item3 {
+    background-color: blue;
+    flex-shrink: 3;
+    order: -1;
+}
+
+.Item4 {
+    background-color: indigo;
+    flex-grow: 3;
+    order: 2;
+}
