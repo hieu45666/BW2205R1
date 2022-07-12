@@ -1,0 +1,81 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+header {
+    height: 200px;
+    background-color: coral;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.product-container {
+    height: 800px;
+    padding: 50px 150px;
+    box-sizing: border-box;
+}
+
+header > h1 {
+    color: white;
+    margin-top: 90px;
+    float: left;
+}
+
+header input {
+    float: right;
+    margin-top: 90px;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.product {
+    width: 15%;
+    margin: 2.5%;
+    float: left;
+}
+
+.product > img {
+    width: 100%;
+}
+
+.pr_dt {
+    padding: 5px 10px;
+}
+
+.pr_dt p {
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+}
+
+.pr_dt span {
+    color: coral;
+    font-style: italic;
+}
+
+@media screen and (max-width: 1000px){
+    .product-container {
+        padding: 20px 30px;
+    }
+
+    .pr_dt {
+        padding: 10px 10px;
+    }
+
+    .pr_dt p, span {
+        font-size: 12px;
+    }
+}
+
+@media screen and(max-width: 700px) {
+    header input{
+        display: none;
+    }
+}
