@@ -1,0 +1,53 @@
+$main_color: blue;
+$font_size: 20px;
+
+@mixin max_width($max_width){
+    max-width: $max_width;
+}
+
+@mixin set-color($main-color, $secondary-color){
+    color: $main-color;
+    border: 2px solid $main-color;
+    background-color: $secondary-color;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: $font_size;
+}
+
+.container {
+    @include set-color(green, yellow);
+    padding: 10px 30px;
+    @include max_width(50%);
+    margin: auto;
+    margin-top: 150px;
+
+    h1 {
+        color: $main_color;
+    }
+
+    p {
+        color: $main_color;
+    }
+
+    button {
+       @include set-color(green, honeydew);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        @include max_width(70%);
+    }
+}
+
+@media screen and (max-width: 774px) {
+    .container {
+        @include max_width(100%);
+    }
+}
